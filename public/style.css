@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #f3f7ff;
+}
+header, main {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+header { padding: 30px 0 10px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+.card, .incident {
+  background: #111d30;
+  border: 1px solid #243b59;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.online { color: #6ee7b7; }
+.offline { color: #fb7185; }
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+button, select {
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #fff;
+  border: 1px solid #334155;
+  cursor: pointer;
+}

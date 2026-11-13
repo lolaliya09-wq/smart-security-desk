@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Security Desk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Security Desk</h1>
+    <p>CCTV & IoT Incident Management</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Камеры</h2>
+      <div id="cameraList" class="grid"></div>
+    </section>
+
+    <section>
+      <div class="toolbar">
+        <h2>Инциденты</h2>
+        <select id="statusFilter">
+          <option value="">Все статусы</option>
+          <option value="new">New</option>
+          <option value="in_progress">In Progress</option>
+          <option value="resolved">Resolved</option>
+        </select>
+      </div>
+      <div id="incidentList"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
