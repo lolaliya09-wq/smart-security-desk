@@ -147,3 +147,4 @@ app.patch("/api/incidents/:id", (req, res) => {
 app.listen(PORT, () => {
   console.log('Smart Security Desk: http://localhost:${PORT}');
 });
+// status fix validated
